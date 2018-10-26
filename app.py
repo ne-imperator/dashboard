@@ -8,7 +8,7 @@ def show_the_login_form():
 
 
 def do_the_login(username, password):
-    if username == 'admin' && password == 'admin':
+    if username == 'admin' and password == 'admin':
         return app.send_static_file('private.html')
     else:
         return 'Unable to log in'
