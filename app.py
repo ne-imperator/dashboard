@@ -11,7 +11,7 @@ def do_the_login(username, password):
     if username == 'admin' and password == 'admin':
         return app.send_static_file('private.html')
     else:
-        return 'Unable to log in'
+        return app.send_static_file('error.html')
 
 
 @app.route('/', methods=['GET', 'POST'])
